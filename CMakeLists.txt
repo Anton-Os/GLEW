@@ -33,4 +33,4 @@ install(FILES
     DESTINATION include/GL
 )
 
-install(EXPORT GLEW DESTINATION lib/GLEW FILE GLEW-config.cmake)
+install(EXPORT GLEW DESTINATION lib/GLEW FILE glew-config.cmake)
