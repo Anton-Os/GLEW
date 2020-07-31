@@ -11,14 +11,9 @@ target_include_directories(
     PRIVATE ${CMAKE_SOURCE_DIR}
 )
 
-target_include_directories(
-    GLEW_lib
-    PUBLIC $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}>
-)
-
 target_include_directories(GLEW_lib
 	INTERFACE
-	$<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}>
+	$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
 	$<INSTALL_INTERFACE:include>
 )
 
