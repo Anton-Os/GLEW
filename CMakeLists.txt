@@ -7,8 +7,8 @@ add_library(GLEW_lib
 )
 
 target_include_directories(
-    GLEW_lib 
-    PRIVATE ${CMAKE_SOURCE_DIR}
+    GLEW_lib
+    PUBLIC ${CMAKE_SOURCE_DIR}
 )
 
 target_include_directories(GLEW_lib
