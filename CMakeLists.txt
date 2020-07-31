@@ -8,7 +8,12 @@ add_library(GLEW_lib
 
 target_include_directories(
     GLEW_lib
-    PUBLIC ${CMAKE_SOURCE_DIR}
+    PRIVATE ${CMAKE_SOURCE_DIR}
+)
+
+target_include_directories(
+    GLEW_lib
+    PUBLIC $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}>
 )
 
 target_include_directories(GLEW_lib
